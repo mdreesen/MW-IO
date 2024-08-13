@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { UserProvider } from '@auth0/nextjs-auth0/client';
 
-import Navigation from '@/components/Navigation';
+import Navigation from '@/ui/Navigation';
+import Footer from '@/ui/Footer';
 
 import "./globals.css";
 
@@ -22,9 +23,10 @@ export default function RootLayout({
     <html lang="en">
       <UserProvider>
         <body className={inter.className}>
-          <Navigation/>
+          <Navigation />
           {children}
-          </body>
+          <Footer />
+        </body>
       </UserProvider>
     </html>
   );
