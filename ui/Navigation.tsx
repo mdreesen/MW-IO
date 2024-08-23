@@ -3,10 +3,10 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import { userServer } from '@/lib/user/user-server';
 
 const navigation = [
-    { name: 'Dashboard', href: '#', current: true },
-    { name: 'Midwives', href: '#', current: false },
-    { name: 'Documents', href: '#', current: false },
-    { name: 'Calendar', href: '#', current: false },
+    { name: 'Dashboard', href: '/user/dashboard', current: true },
+    { name: 'Midwives', href: '/user/midwives', current: false },
+    { name: 'Documents', href: '/user/documents', current: false },
+    { name: 'Calendar', href: '/user/calendar', current: false },
 ]
 
 function classNames(...classes: string[]) {
